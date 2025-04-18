@@ -6,6 +6,9 @@ from scipy.optimize import curve_fit
 
 app = Flask(__name__)
 
+@app.route('/')
+def inicio():
+    return "Hola desde Render!"
 def generate_plot():
     # Datos
     t = np.array([15, 30, 45, 60, 75, 90, 105, 120])
